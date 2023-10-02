@@ -1,0 +1,19 @@
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: -1px;
+  color: white;
+}
+.desc {
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 30px;
+  max-width: 420px;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 12px;
+  margin-left: 12px;
+}

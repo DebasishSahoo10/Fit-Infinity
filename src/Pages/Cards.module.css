@@ -1,0 +1,132 @@
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #000dff;
+  border-radius: 16px;
+  flex-direction: column;
+  gap: 10px;
+  width: 40vw;
+}
+dialog > label {
+  font-family: "Manrope", sans-serif;
+}
+dialog > input,
+select {
+  font-family: "Manrope", sans-serif;
+  border: 1px black solid;
+  border-radius: 6px;
+  height: 40px;
+  font-size: large;
+}
+dialog > option:checked {
+  background-color: black;
+}
+dialog > button {
+  background-color: #000dff;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  border: 0;
+  height: 40px;
+  font-size: large;
+  border-radius: 6px;
+}
+dialog > button:first-of-type {
+  background-color: transparent;
+  border: 1px solid #000dff;
+  color: #000dff;
+}
+li {
+  list-style: none;
+  background-color: white;
+  width: 60vw;
+  font-family: "Manrope", sans-serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.addButtonHolder {
+  font-size: larger;
+  border-radius: 16px;
+  font-family: "Manrope", sans-serif;
+  background-color: white;
+  width: 60vw;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000dff;
+}
+.detailsHolder {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+.detailsHolder > p {
+  margin-bottom: 5px;
+  /* background-color: turquoise; */
+}
+.detailsHolder > p:nth-child(1) {
+  font-size: x-large;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #000dff;
+}
+.detailsHolder > p:nth-child(2) {
+  color: #686873;
+}
+.detailsHolder > p:nth-child(n + 2) {
+  margin-top: 2px;
+  color: #686873;
+}
+.emojiHolder > span {
+  font-size: 80px;
+  background-color: transparent;
+  margin-right: 20px;
+  /* border: 2px solid #eaecf0; */
+  border-radius: 16px;
+  cursor: pointer;
+}
+.removeButton {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #eaecf0;
+  border-radius: 100%;
+  cursor: pointer;
+}
+ul {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-block-start: 0;
+  margin-block-end: 20px;
+}
+h2 {
+  font-family: "Manrope", sans-serif;
+  color: white;
+}
+@media only screen and (max-width: 1030px) {
+  li {
+    width: 90vw;
+  }
+  .addButtonHolder {
+    width: 90vw;
+  }
+  dialog {
+    width: 60vw;
+  }
+}
